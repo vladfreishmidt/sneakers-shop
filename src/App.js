@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './components/Card';
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
             </div> 
           </div>
 
-</div>
+      </div>
 
           <div className="cartTotalBlock">
             <ul>
@@ -89,80 +90,11 @@ function App() {
 
         <div className="sneakers d-flex justify-between">
 
-          <div className="card">
-            <div className="favorite">
-              <img src="/img/heart_liked.svg" alt="unliked"/>
-            </div>
-            <img width={133} height={112} src="/img/sneakers/1.jpg" alt="Мужские Кроссовки Nike Air Max 270"/>
-            <h5>
-              Мужские Кроссовки Nike Blazer Mid Suede
-            </h5>
-            <div className="d-flex justify-between align-center">
-              <div className="d-flex flex-column ">
-                <span>
-                  Цена:
-                </span>
-                <b>12 999 руб.</b>
-              </div>
-              <button className="button">
-                <img width={11} heihgt={11} src="/img/plus.svg" alt="add"/>
-              </button>
-            </div>
-          </div>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
 
-          <div className="card">
-            <img width={133} height={112} src="/img/sneakers/2.jpg" alt="Мужские Кроссовки Nike Air Max 270"/>
-            <h5>
-              Мужские Кроссовки Nike Air Max 270
-            </h5>
-            <div className="d-flex justify-between align-center">
-              <div className="d-flex flex-column ">
-                <span>
-                  Цена:
-                </span>
-                <b>12 999 руб.</b>
-              </div>
-              <button className="button">
-                <img width={11} heihgt={11} src="/img/plus.svg" alt="add"/>
-              </button>
-            </div>
-          </div>
-
-          <div className="card">
-            <img width={133} height={112} src="/img/sneakers/3.jpg" alt="Мужские Кроссовки Nike Air Max 270"/>
-            <h5>
-              Мужские Кроссовки Nike Blazer Mid Suede
-            </h5>
-            <div className="d-flex justify-between align-center">
-              <div className="d-flex flex-column ">
-                <span>
-                  Цена:
-                </span>
-                <b>8 499 руб.</b>
-              </div>
-              <button className="button">
-                <img width={11} heihgt={11} src="/img/plus.svg" alt="add"/>
-              </button>
-            </div>
-          </div>
-
-          <div className="card">
-            <img width={133} height={112} src="/img/sneakers/4.jpg" alt="Мужские Кроссовки Nike Air Max 270"/>
-            <h5>
-              Кроссовки Puma X Aka Boku Future Rider
-            </h5>
-            <div className="d-flex justify-between align-center">
-              <div className="d-flex flex-column ">
-                <span>
-                  Цена:
-                </span>
-                <b>8 999 руб.</b>
-              </div>
-              <button className="button">
-                <img width={11} heihgt={11} src="/img/plus.svg" alt="add"/>
-              </button>
-            </div>
-          </div>
 
         </div>
 
@@ -171,5 +103,5 @@ function App() {
     </div>
   );
 }
-
+ 
 export default App;
